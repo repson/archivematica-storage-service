@@ -20,3 +20,5 @@ python-keystoneclient==1.8.1
 python-swiftclient==2.4.0
 requests>=2.3.0
 sword2
+djangorestframework==3.2.4
+django-filter==0.11.0
