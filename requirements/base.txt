@@ -22,3 +22,4 @@ requests>=2.3.0
 sword2
 djangorestframework==3.2.4
 django-filter==0.11.0
+-e git://github.com/mcantelon/mets-reader-writer.git@dev/issue-8894-premis-parsing#egg=metsrw
