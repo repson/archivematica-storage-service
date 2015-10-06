@@ -199,6 +199,7 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
+    'rest_framework',  # REST framework
     'tastypie',  # REST framework
 )
 
@@ -213,6 +214,12 @@ LOCAL_APPS = (
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 ########## END APP CONFIGURATION
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
+    'PAGE_SIZE': 10
+}
 
 ########## LOGIN REQUIRED MIDDLEWARE CONFIGURATION
 
