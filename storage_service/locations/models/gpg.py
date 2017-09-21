@@ -82,7 +82,8 @@ class GPG(models.Model):
 
     ALLOWED_LOCATION_PURPOSE = [
         Location.AIP_STORAGE,
-        Location.BACKLOG
+        Location.BACKLOG,
+        Location.REPLICATOR
     ]
 
     def move_to_storage_service(self, src_path, dst_path, dst_space):
