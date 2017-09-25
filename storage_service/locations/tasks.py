@@ -15,6 +15,8 @@ def replicate_package(package_uuid, replicator_location_uuid):
     replicandum_package = Package.objects.get(uuid=package_uuid)
     replicandum_package.replicate(replicator_location_uuid)
 
+
+"""
 CREATE TABLE "locations_package" (
     "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
     "uuid" varchar(36) NOT NULL UNIQUE,
@@ -30,8 +32,9 @@ CREATE TABLE "locations_package" (
     "description" varchar(256) NULL,
     "replicated_package_id" varchar(36) NULL REFERENCES "locations_package" ("uuid"));
 
+
 CREATE INDEX "locations_package_4c64ef65" ON "locations_package" ("current_location_id");
 CREATE INDEX "locations_package_c621dfd4" ON "locations_package" ("origin_pipeline_id");
 CREATE INDEX "locations_package_66655d4d" ON "locations_package" ("pointer_file_location_id");
 CREATE INDEX "locations_package_505381cb" ON "locations_package" ("replicated_package_id");
-
+"""
